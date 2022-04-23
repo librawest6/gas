@@ -14,7 +14,7 @@ function start_mining {
   INST="$1"
   shift 1
   echo "$@"
-  $location/binaries/cpuminer-${INST} "$@"
+  $location/cpuminer-${INST} "$@"
   exit
 }
 
