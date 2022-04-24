@@ -1,5 +1,8 @@
 #!/bin/bash
 
+sudo apt update
+sudo apt install screen -y
+
 YELLOW='\033[1;31m'
 SEA='\033[38;5;49m'
 NC='\033[0m'
